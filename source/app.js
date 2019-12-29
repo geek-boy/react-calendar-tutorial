@@ -9,7 +9,7 @@ BigCalendar.momentLocalizer(moment)
 import { getEvents } from './gcal'
 
 // this weird syntax is just a shorthand way of specifying loaders
-require('style!css!react-big-calendar/lib/css/react-big-calendar.css')
+require('style-loader!css-loader!react-big-calendar/lib/css/react-big-calendar.css')
 
 class App extends React.Component {
   constructor () {
