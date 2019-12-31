@@ -39,9 +39,10 @@ class App extends React.Component {
       // React Components in JSX look like HTML tags
       <Calendar
         localizer={localizer}
-        style={{height: '420px'}}
         events={this.state.events}
-        timeslots={4}
+        //timeslots={4}
+        endAccessor="end"
+        style={{ height: 500 }}
       />
     )
   }
