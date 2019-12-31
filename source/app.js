@@ -40,7 +40,6 @@ class App extends React.Component {
       <Calendar
         localizer={localizer}
         events={this.state.events}
-        //timeslots={4}
         endAccessor="end"
         style={{ height: 500 }}
       />
