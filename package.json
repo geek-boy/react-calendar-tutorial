@@ -7,21 +7,27 @@
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
-    "babel-core": "^6.21.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24",
     "css-loader": "^0.26.1",
+    "dotenv-webpack": "^1.7.0",
     "moment": "^2.17.1",
-    "react": "^15.4.1",
-    "react-big-calendar": "^0.11.1",
-    "react-dom": "^15.4.1",
-    "style-loader": "^0.13.1",
+    "react-big-calendar": "^0.23.0",
     "superagent": "^3.3.1",
     "webpack": "^4.41.4"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/preset-react": "^7.7.4"
-  }
+    "@babel/preset-react": "^7.7.4",
+    "core-js": "^3.6.1",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "style-loader": "1.1.2"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/geek-boy/react-calendar-tutorial.git"
 }

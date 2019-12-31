@@ -2,14 +2,25 @@ import React from 'react'
 import { render } from 'react-dom'
 import moment from 'moment'
 
-import BigCalendar from 'react-big-calendar'
-// a localizer for BigCalendar
-BigCalendar.momentLocalizer(moment)
+//import BigCalendar from 'react-big-calendar'
+import {
+  Calendar,
+  DateLocalizer,
+  momentLocalizer,
+  globalizeLocalizer,
+  move,
+  Views,
+  Navigate,
+  components,
+} from 'react-big-calendar'
+
+// a localizer for Calendar
+const localizer = momentLocalizer(moment) // or globalizeLocalizer
 
 import { getEvents } from './gcal'
 
-// this weird syntax is just a shorthand way of specifying loaders
-require('style-loader!css-loader!react-big-calendar/lib/css/react-big-calendar.css')
+// Load CSS from react-big-calendar
+import css from 'react-big-calendar/lib/css/react-big-calendar.css'
 
 class App extends React.Component {
   constructor () {
@@ -26,9 +37,11 @@ class App extends React.Component {
   render () {
     return (
       // React Components in JSX look like HTML tags
-      <BigCalendar
+      <Calendar
+        localizer={localizer}
         style={{height: '420px'}}
         events={this.state.events}
+        timeslots={4}
       />
     )
   }
